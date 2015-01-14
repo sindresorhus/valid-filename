@@ -23,6 +23,11 @@ validFilename('foo-bar');
 ```
 
 
+## Related
+
+- [`filenamify`](https://github.com/sindresorhus/filenamify) - Convert a string to a valid filename
+
+
 ## License
 
 MIT © [Sindre Sorhus](http://sindresorhus.com)
