@@ -1,0 +1,40 @@
+{
+  "name": "valid-filename",
+  "version": "0.0.0",
+  "description": "Check if a string is a valid filename",
+  "license": "MIT",
+  "repository": "sindresorhus/valid-filename",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "re",
+    "regex",
+    "regexp",
+    "filename",
+    "valid",
+    "validate",
+    "check",
+    "detect",
+    "is",
+    "str",
+    "string"
+  ],
+  "dependencies": {
+    "filename-reserved-regex": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
