@@ -1,10 +1,8 @@
-'use strict';
-var test = require('ava');
-var validFilename = require('./');
+import test from 'ava';
+import fn from './';
 
-test(function (t) {
-	t.assert(validFilename('foo-bar'));
-	t.assert(!validFilename('foo/bar'));
-	t.assert(!validFilename('<foo|bar>'));
-	t.end();
+test(t => {
+	t.true(fn('foo-bar'));
+	t.false(fn('foo/bar'));
+	t.false(fn('<foo|bar>'));
 });
