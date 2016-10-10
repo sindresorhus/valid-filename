@@ -13,7 +13,7 @@ $ npm install --save valid-filename
 ## Usage
 
 ```js
-var validFilename = require('valid-filename');
+const validFilename = require('valid-filename');
 
 validFilename('foo/bar');
 //=> false
@@ -25,9 +25,9 @@ validFilename('foo-bar');
 
 ## Related
 
-- [`filenamify`](https://github.com/sindresorhus/filenamify) - Convert a string to a valid filename
+- [filenamify](https://github.com/sindresorhus/filenamify) - Convert a string to a valid safe filename
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

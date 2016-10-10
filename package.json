@@ -13,7 +13,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "ava"
+    "test": "xo && ava"
   },
   "files": [
     "index.js"
@@ -35,6 +35,10 @@
     "filename-reserved-regex": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "*"
+    "ava": "*",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
   }
 }

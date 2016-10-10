@@ -1,12 +1,12 @@
 'use strict';
-var reserved = require('filename-reserved-regex');
+const filenameReservedRegex = require('filename-reserved-regex');
 
-module.exports = (str) => {
+module.exports = str => {
 	if (!str || str.length > 255) {
 		return false;
 	}
 
-	if (reserved().test(str) || reserved.windowsNames().test(str)) {
+	if (filenameReservedRegex().test(str) || filenameReservedRegex.windowsNames().test(str)) {
 		return false;
 	}
 
