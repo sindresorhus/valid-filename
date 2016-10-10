@@ -10,5 +10,9 @@ module.exports = str => {
 		return false;
 	}
 
+	if (/^\.\.?$/.test(str)) {
+		return false;
+	}
+
 	return true;
 };

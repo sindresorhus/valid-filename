@@ -14,4 +14,7 @@ test(t => {
 	t.true(m('aux1'));
 	t.true(m('a'.repeat(255)));
 	t.false(m('a'.repeat(256)));
+	t.false(m('.'));
+	t.false(m('..'));
+	t.true(m('...'));
 });
