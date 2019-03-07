@@ -1,20 +1,20 @@
 import test from 'ava';
-import m from './';
+import validFilename from '.';
 
-test(t => {
-	t.true(m('foo-bar'));
-	t.false(m('foo/bar'));
-	t.false(m(''));
-	t.false(m('<foo|bar>'));
-	t.false(m('con'));
-	t.false(m('aux'));
-	t.false(m('com1'));
-	t.false(m('lpt1'));
-	t.true(m('nul1'));
-	t.true(m('aux1'));
-	t.true(m('a'.repeat(255)));
-	t.false(m('a'.repeat(256)));
-	t.false(m('.'));
-	t.false(m('..'));
-	t.true(m('...'));
+test('validFilename', t => {
+	t.true(validFilename('foo-bar'));
+	t.false(validFilename('foo/bar'));
+	t.false(validFilename(''));
+	t.false(validFilename('<foo|bar>'));
+	t.false(validFilename('con'));
+	t.false(validFilename('aux'));
+	t.false(validFilename('com1'));
+	t.false(validFilename('lpt1'));
+	t.true(validFilename('nul1'));
+	t.true(validFilename('aux1'));
+	t.true(validFilename('a'.repeat(255)));
+	t.false(validFilename('a'.repeat(256)));
+	t.false(validFilename('.'));
+	t.false(validFilename('..'));
+	t.true(validFilename('...'));
 });

@@ -1,7 +1,7 @@
 'use strict';
 const filenameReservedRegex = require('filename-reserved-regex');
 
-module.exports = str => {
+const validFilename = str => {
 	if (!str || str.length > 255) {
 		return false;
 	}
@@ -16,3 +16,6 @@ module.exports = str => {
 
 	return true;
 };
+
+module.exports = validFilename;
+module.exports.default = validFilename;
