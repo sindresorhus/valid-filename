@@ -22,6 +22,18 @@ validFilename('foo-bar');
 //=> true
 ```
 
+## API
+
+### validFilename(input)
+
+Returns a `boolean` of whether `input` is a valid filename.
+
+#### input
+
+Type: `string`
+
+The string to check for whether it is a valid filename.
+
 
 ## Related
 
