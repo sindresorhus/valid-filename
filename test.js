@@ -1,7 +1,7 @@
 import test from 'ava';
 import validFilename from '.';
 
-test('validFilename', t => {
+test('main', t => {
 	t.true(validFilename('foo-bar'));
 	t.false(validFilename('foo/bar'));
 	t.false(validFilename(''));

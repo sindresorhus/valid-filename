@@ -1,16 +1,16 @@
 'use strict';
 const filenameReservedRegex = require('filename-reserved-regex');
 
-const validFilename = str => {
-	if (!str || str.length > 255) {
+const validFilename = string => {
+	if (!string || string.length > 255) {
 		return false;
 	}
 
-	if (filenameReservedRegex().test(str) || filenameReservedRegex.windowsNames().test(str)) {
+	if (filenameReservedRegex().test(string) || filenameReservedRegex.windowsNames().test(string)) {
 		return false;
 	}
 
-	if (/^\.\.?$/.test(str)) {
+	if (/^\.\.?$/.test(string)) {
 		return false;
 	}
 
