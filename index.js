@@ -18,4 +18,5 @@ const validFilename = string => {
 };
 
 module.exports = validFilename;
+// TODO: Remove this for the next major release
 module.exports.default = validFilename;
