@@ -1,4 +1,4 @@
-import {expectType} from 'tsd-check';
-import validFilename from '.';
+import {expectType} from 'tsd';
+import validFilename = require('.');
 
 expectType<boolean>(validFilename('foo/bar'));
