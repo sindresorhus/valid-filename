@@ -1,4 +1,4 @@
-# valid-filename [![Build Status](https://travis-ci.org/sindresorhus/valid-filename.svg?branch=master)](https://travis-ci.org/sindresorhus/valid-filename)
+# valid-filename
 
 > Check if a string is a [valid filename](https://github.com/sindresorhus/filename-reserved-regex)
 
