@@ -2,30 +2,27 @@
 
 > Check if a string is a [valid filename](https://github.com/sindresorhus/filename-reserved-regex)
 
-
 ## Install
 
 ```
 $ npm install valid-filename
 ```
 
-
 ## Usage
 
 ```js
-const validFilename = require('valid-filename');
+import isValidFilename from 'valid-filename';
 
-validFilename('foo/bar');
+isValidFilename('foo/bar');
 //=> false
 
-validFilename('foo-bar');
+isValidFilename('foo-bar');
 //=> true
 ```
 
-
 ## API
 
-### validFilename(input)
+### isValidFilename(input)
 
 Returns a `boolean` of whether `input` is a valid filename.
 
@@ -35,12 +32,6 @@ Type: `string`
 
 The string to check.
 
-
 ## Related
 
 - [filenamify](https://github.com/sindresorhus/filenamify) - Convert a string to a valid safe filename
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

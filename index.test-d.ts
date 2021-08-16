@@ -1,4 +1,4 @@
 import {expectType} from 'tsd';
-import validFilename = require('.');
+import isValidFilename from './index.js';
 
-expectType<boolean>(validFilename('foo/bar'));
+expectType<boolean>(isValidFilename('foo/bar'));

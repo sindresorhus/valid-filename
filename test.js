@@ -1,5 +1,5 @@
 import test from 'ava';
-import validFilename from '.';
+import validFilename from './index.js';
 
 test('main', t => {
 	t.true(validFilename('foo-bar'));

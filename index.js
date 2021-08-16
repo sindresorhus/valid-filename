@@ -1,22 +1,17 @@
-'use strict';
-const filenameReservedRegex = require('filename-reserved-regex');
+import filenameReservedRegex, {windowsReservedNameRegex} from 'filename-reserved-regex';
 
-const validFilename = string => {
+export default function isValidFilename(string) {
 	if (!string || string.length > 255) {
 		return false;
 	}
 
-	if (filenameReservedRegex().test(string) || filenameReservedRegex.windowsNames().test(string)) {
+	if (filenameReservedRegex().test(string) || windowsReservedNameRegex().test(string)) {
 		return false;
 	}
 
-	if (/^\.\.?$/.test(string)) {
+	if (string === '.' || string === '..') {
 		return false;
 	}
 
 	return true;
-};
-
-module.exports = validFilename;
-// TODO: Remove this for the next major release
-module.exports.default = validFilename;
+}
