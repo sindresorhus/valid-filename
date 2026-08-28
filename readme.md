@@ -4,8 +4,8 @@
 
 ## Install
 
-```
-$ npm install valid-filename
+```sh
+npm install valid-filename
 ```
 
 ## Usage
